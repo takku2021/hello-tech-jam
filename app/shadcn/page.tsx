@@ -3,7 +3,7 @@
 import { useState } from "react";
 import { Input } from "@/components/ui/input";
 import { Button } from "@/components/ui/button";
-import { ThemeToggle } from "@/components/theme-toggle";
+// import { ThemeToggle } from "@/components/theme-toggle";
 
 export default function Page() {
   const [keyword, setKeyword] = useState("");
@@ -21,9 +21,7 @@ export default function Page() {
 
   return (
     <div className="flex min-h-screen items-start justify-center pt-36">
-      <div className="absolute top-4 right-4">
-        <ThemeToggle />
-      </div>
+      <div className="absolute top-4 right-4">{/* <ThemeToggle /> */}</div>
       <form className="flex items-center space-x-4">
         <Input
           type="search"
